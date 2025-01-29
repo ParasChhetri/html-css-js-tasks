@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: rgb(48, 48, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.navbar h1 {
+    color: white;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    color: white;
+    list-style-type: none;
+    margin: 0 16px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.menuBtn, .closeBtn {
+    font-size: 28px;
+    margin: 0 20px;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.loginBtn {
+    background: transparent;
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.loginBtn:active {
+    background: white;
+    color: black;
+}
+
+.signupBtn {
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.signupBtn:active {
+    background: transparent;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 782px) {
+    .nav-menu ul {
+        display: none;
+    }
+    .nav-menu ul li {
+        display: block;
+        margin: 20px 0;
+    }
+    .menuBtn {
+        display: block;
+    }
+    .hidden {
+        display: block;
+        margin: 16px 0;
+    }
+    .small-screen {
+        display: none;
+    }
+    #menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background: rgb(40, 40, 140);
+    }
+}

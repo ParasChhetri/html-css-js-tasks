@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Site name</h1>
+        <div class="nav-menu">
+            <span class="menuBtn" onclick="openMenu()">&#9776;</span>
+            <span class="closeBtn" onclick="closeMenu()">&#9746;</span>
+            <ul id="menu">
+                <li>Home</li>
+                <li>Pages</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+                <div class="hidden">
+                    <button type="submit" class="loginBtn">Login</button>
+                    <button type="button" class="signupBtn">Signup</button>
+                </div>
+            </ul>
+        </div>
+        <div class="small-screen">
+            <button type="submit" class="loginBtn">Login</button>
+            <button type="button" class="signupBtn">Signup</button>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
