@@ -1,0 +1,16 @@
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+.icon-style {
+    margin-left: 10px;
+    transition: 0.3s;
+}
